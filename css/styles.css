@@ -644,7 +644,7 @@ table {
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
+.footer {
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -659,15 +659,15 @@ table {
 #header:before, #header:after,
 #main:before,
 #main:after,
-#footer:before,
-#footer:after {
+.footer:before,
+.footer:after {
   content: "";
   display: table;
 }
 /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:after,
 #main:after,
-#footer:after {
+.footer:after {
   clear: both;
 }
 
@@ -750,11 +750,11 @@ table {
   }
 
   /* line 120, ../sass/layouts/_responsive.scss */
-  #footer {
+  .footer {
     text-align: center;
   }
   /* line 122, ../sass/layouts/_responsive.scss */
-  #footer .footer-menu li.last {
+  .footer .footer-menu li.last {
     float: none !important;
     display: inline-block;
     margin-top: 0.5em;
@@ -1210,11 +1210,11 @@ table {
   }
 
   /* line 411, ../sass/layouts/_responsive.scss */
-  #footer {
+  .footer {
     text-align: center;
   }
   /* line 413, ../sass/layouts/_responsive.scss */
-  #footer .footer-menu ul li.last {
+  .footer .footer-menu ul li.last {
     display: inline-block;
     float: none !important;
     margin-top: 0.5em;
@@ -1431,7 +1431,7 @@ table {
 .with-wireframes #navigation,
 .with-wireframes .region-sidebar-first,
 .with-wireframes .region-sidebar-second,
-.with-wireframes #footer,
+.with-wireframes .footer,
 .with-wireframes .region-bottom {
   outline: 1px solid #ccc;
 }
@@ -2320,7 +2320,7 @@ tr.selected td {
   .region-sidebar-first,
   .region-sidebar-second,
   .region-highlighted,
-  #footer,
+  .footer,
   .breadcrumb,
   .tabs,
   .action-links,
@@ -2773,7 +2773,7 @@ h2, h3 {
 }
 
 /* line 36, ../sass/components/_page.scss */
-#footer {
+.footer {
   position: relative;
   z-index: 4;
   max-width:1100px;
@@ -3043,42 +3043,42 @@ div.swish {
 }
 
 /* line 30, ../sass/components/_navigation.scss */
-#footer {
+.footer {
   background: #266295;
   /* padding: 1em 3em; */
   padding: 1em;
 }
 /* line 33, ../sass/components/_navigation.scss */
-#footer .footer-menu {
+.footer .footer-menu {
   margin: 0;
 }
 /* line 35, ../sass/components/_navigation.scss */
-#footer .footer-menu ul {
+.footer .footer-menu ul {
   padding: 0;
   margin: 0;
 }
 /* line 38, ../sass/components/_navigation.scss */
-#footer .footer-menu ul li {
+.footer .footer-menu ul li {
   list-style: none;
   display: inline;
   border-right: 2px solid #E4E5E5;
   padding: 0 0.6em;
 }
 /* line 43, ../sass/components/_navigation.scss */
-#footer .footer-menu ul li a, #footer .footer-menu ul li a:visited {
+.footer .footer-menu ul li a, .footer .footer-menu ul li a:visited {
   color: #E4E5E5;
 }
 /* line 46, ../sass/components/_navigation.scss */
-#footer .footer-menu ul li a:hover, #footer .footer-menu ul li a:active {
+.footer .footer-menu ul li a:hover, .footer .footer-menu ul li a:active {
   color: #f1d000;
 }
 /* line 50, ../sass/components/_navigation.scss */
-#footer .footer-menu ul li.last {
+.footer .footer-menu ul li.last {
   border: 0 none;
   float: right;
 }
 /* line 54, ../sass/components/_navigation.scss */
-#footer .footer-menu ul li:nth-last-child(2) {
+.footer .footer-menu ul li:nth-last-child(2) {
   border: 0 none;
 }
 

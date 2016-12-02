@@ -28,7 +28,7 @@
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
+.footer {
   padding-left: 10px;
   padding-right: 10px;
   border-left: 0 !important;
@@ -43,7 +43,7 @@
 /* Containers for grid items and flow items. */
 #header,
 #main,
-#footer {
+.footer {
   *position: relative;
   *zoom: 1;
 }
@@ -51,14 +51,14 @@
 #header:after,
 #main:before,
 #main:after,
-#footer:before,
-#footer:after {
+.footer:before,
+.footer:after {
   content: "";
   display: table;
 }
 #header:after,
 #main:after,
-#footer:after {
+.footer:after {
   clear: both;
 }
 
