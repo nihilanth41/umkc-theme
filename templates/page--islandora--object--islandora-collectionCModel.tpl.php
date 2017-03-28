@@ -83,18 +83,22 @@
 
     <?php print render($page['highlighted']); ?>
 
+    <?php if (!($islandora_object['pid'] === "umkc:root")): ?>
     <div id="umkc-collection-header">
       <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+	<h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       
       <div class="umkc-collection-header-thumbnail">
         <?php print render($islandora_object['thumbnail']); ?>
       </div>
       <div class="umkc-collection-header-description">
-        <?php print html_entity_decode($islandora_object['description']['1']); ?>
+	<?php if (isset($islandora_object['description']['1']) && $islandora_object['description']['1']): ?>
+          <?php print html_entity_decode($islandora_object['description']['1']); ?>
+	<?php endif; ?>
       </div>
     </div>
+   <?php endif; ?>
 
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
